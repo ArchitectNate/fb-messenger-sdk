@@ -1496,12 +1496,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "b75473da7b0523e23f27e3003559efc069426623"
+                "reference": "352654b8b95d21eddabe4967bce1e84e5c17ecb1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/b75473da7b0523e23f27e3003559efc069426623",
-                "reference": "b75473da7b0523e23f27e3003559efc069426623",
+                "url": "https://api.github.com/repos/symfony/console/zipball/352654b8b95d21eddabe4967bce1e84e5c17ecb1",
+                "reference": "352654b8b95d21eddabe4967bce1e84e5c17ecb1",
                 "shasum": ""
             },
             "require": {
@@ -1556,7 +1556,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2018-07-07T16:01:39+00:00"
+            "time": "2018-07-09T14:07:29+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -1622,12 +1622,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "3bca3baddc791a60b8a1e199892ef270b74b0877"
+                "reference": "d6f417d21efe2a2b91c0c8a19d938c5db18d81d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/3bca3baddc791a60b8a1e199892ef270b74b0877",
-                "reference": "3bca3baddc791a60b8a1e199892ef270b74b0877",
+                "url": "https://api.github.com/repos/symfony/process/zipball/d6f417d21efe2a2b91c0c8a19d938c5db18d81d3",
+                "reference": "d6f417d21efe2a2b91c0c8a19d938c5db18d81d3",
                 "shasum": ""
             },
             "require": {
@@ -1663,7 +1663,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2018-05-31T10:18:23+00:00"
+            "time": "2018-07-06T18:45:13+00:00"
         },
         {
             "name": "symfony/yaml",
