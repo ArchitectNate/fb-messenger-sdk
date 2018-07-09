@@ -6,7 +6,7 @@ namespace ArchNate\MessengerSDK\Api;
 
 use ArchNate\MessengerSdk\FacebookRequestUri;
 
-class FacebookApiInterface
+interface FacebookApiInterface
 {
     public function getRequestUri(): FacebookRequestUri;
     public function getRequestPath(): string;
