@@ -2,14 +2,15 @@
 
 declare(strict_types=1);
 
-/**
- * The Facebook Request URI for the various APIs
- */
-
 namespace ArchNate\MessengerSdk;
 
 use Stringy\Stringy as S;
 
+/**
+ * Class FacebookRequestUri
+ * The Facebook Request URI for the various APIs
+ * @package ArchNate\MessengerSdk
+ */
 class FacebookRequestUri
 {
     const BASE_URI = "https://graph.facebook.com/";
