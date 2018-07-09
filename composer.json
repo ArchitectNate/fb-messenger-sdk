@@ -1,5 +1,5 @@
 {
-    "name": "architectnate/fb-messenger-sdk",
+    "name": "architectnate/messenger-sdk",
     "description": "A simple FB Messenger API wrapper for PHP",
     "type": "library",
     "license": "MIT",
@@ -12,7 +12,7 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "ArchitectNate\\FbMessengerSDK\\": "src/"
+            "ArchNate\\MessengerSDK\\": "src/"
         }
     },
     "autoload-dev": {
