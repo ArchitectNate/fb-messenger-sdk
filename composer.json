@@ -1,5 +1,14 @@
 {
-    "require-dev": {
-        "laravel/homestead": "^7.9"
-    }
+    "name": "architectnate/fb-messenger-sdk",
+    "description": "A simple FB Messenger API wrapper for PHP",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nathan Sepulveda",
+            "email": "sepulveda523+code@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
 }
