@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace ArchitectNate\MessengerSdk;
 
-use FacebookRequestUri;
 /**
  * This is Messenger class handles all of the tokens and configuration
  */

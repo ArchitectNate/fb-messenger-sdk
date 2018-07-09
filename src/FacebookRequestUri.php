@@ -6,7 +6,7 @@ declare(strict_types=1);
  * The Facebook Request URI for the various APIs
  */
 
-namespace ArchNate\MessengerSdk\Api;
+namespace ArchNate\MessengerSdk;
 
 use Stringy\Stringy as S;
 
@@ -26,7 +26,7 @@ class FacebookRequestUri
         $version = S::create($version)->ensureLeft('v');
         $path = S::create($path)->ensureLeft('/');
 
-        $this->fullUri = S::create($this->BASE_URI)
+        $this->fullUri = S::create(self::BASE_URI)
             ->ensureRight('/')
             ->append($version)
             ->append($path);
@@ -38,7 +38,7 @@ class FacebookRequestUri
      */
     public function getUri(): string
     {
-        return $this->fullUri;
+        return (string) $this->fullUri;
     }
 
     /**
