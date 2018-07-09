@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace ArchitectNate\MessengerSdk;
+namespace ArchNate\MessengerSdk;
 
 /**
  * Class FacebookAccessToken
