@@ -9,7 +9,6 @@ folders:
     -
         map: /home/asperon/Projects/primary/fb-messenger-sdk
         to: /home/vagrant/code
-        type: "nfs"
 sites:
     -
         map: fb-messenger-sdk.test
