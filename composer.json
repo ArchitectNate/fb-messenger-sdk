@@ -9,7 +9,7 @@
             "email": "sepulveda523+code@gmail.com"
         }
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
             "ArchitectNate\\FbMessengerSDK\\": "src/"
