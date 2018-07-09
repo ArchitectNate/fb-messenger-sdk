@@ -12,7 +12,7 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "ArchNate\\MessengerSDK\\": "src/"
+            "ArchNate\\MessengerSdk\\": "src/"
         }
     },
     "autoload-dev": {
@@ -20,7 +20,10 @@
             "Tests\\": "tests/"
         }
     },
-    "require": {},
+    "require": {
+        "php": "^7.2",
+        "danielstjules/stringy": "~3.1.0"
+    },
     "require-dev": {
         "laravel/homestead": "^7.9",
         "phpunit/phpunit": "^7.2"
