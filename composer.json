@@ -10,6 +10,11 @@
         }
     ],
     "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "ArchitectNate\\FbMessengerSDK": "src/"
+        }
+    },
     "require": {},
     "require-dev": {
         "laravel/homestead": "^7.9"
