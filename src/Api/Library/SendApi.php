@@ -2,23 +2,19 @@
 
 declare(strict_types=1);
 
-namespace ArchNate\MessengerSdk\Api;
+namespace ArchNate\MessengerSdk\Api\Library;
 
-use ArchNate\MessengerSdk\FacebookRequestUri;
+use ArchNate\MessengerSdk\{FacebookRequestUri, Api\FacebookApiInterface, Api\AbstractFacebookApi};
 
 /**
  * Wrapper around the Facebook SendAPI (https://developers.facebook.com/docs/messenger-platform/reference/send-api)
- * @package ArchNate\MessengerSDK\API
+ * @package ArchNate\MessengerSdk\Api\Library
  */
 class SendApi extends AbstractFacebookApi implements FacebookApiInterface
 {
     public function getRequestPath(): string
     {
         return "/me/messages";
-    }
 
-    public function getRequestUri(): FacebookRequestUri
-    {
-        return $this->requestUri;
     }
 }
