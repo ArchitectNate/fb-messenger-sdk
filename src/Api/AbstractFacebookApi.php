@@ -67,5 +67,10 @@ class AbstractFacebookApi
     {
         return $this->requestUri;
     }
+    
+    public function call($payload: Request): Result
+    {
+        return new ApiResult();
+    }
 
 }

@@ -4,3 +4,4 @@ vendor/
 public/
 .idea/
 .vagrant/
+/nbproject/
