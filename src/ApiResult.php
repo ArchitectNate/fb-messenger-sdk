@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace ArchNate\MessengerSdk\Api;
+namespace ArchNate\MessengerSdk;
 
-class Result
+class ApiResult
 {
     protected $clientResult;
 

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace ArchNate\MessengerSDK\Api;
+namespace ArchNate\MessengerSDK;
 
 use ArchNate\MessengerSdk\{FacebookRequestUri, ApiResult};
 use GuzzleHttp\Client;
