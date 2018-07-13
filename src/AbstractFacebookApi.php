@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace ArchNate\MessengerSdk;
 
-use ArchNate\MessengerSdk\{FacebookAccessToken, FacebookRequestUri, ApiResult};
 use GuzzleHttp\Client;
 
 /**
@@ -13,11 +12,6 @@ use GuzzleHttp\Client;
  */
 class AbstractFacebookApi
 {
-    /**
-     * @var FacebookAccessToken
-     */
-    protected $accessToken;
-
     /**
      * @var string
      */
@@ -38,13 +32,12 @@ class AbstractFacebookApi
      * @param FacebookAccessToken $accessToken
      * @param string $apiVersion
      */
-    public function __construct(FacebookAccessToken $accessToken, string $apiVersion)
+    public function __construct(string $apiVersion)
     {
-        $this->accessToken = $accessToken;
-        $this->apiVersion = $apiVersion;
+      $this->apiVersion = $apiVersion;
 
-        // Generate the FacebookRequestUri object
-        $this->requestUri = new FacebookRequestUri($apiVersion, $this->getRequestPath());
+      // Generate the FacebookRequestUri object
+      $this->requestUri = new FacebookRequestUri($apiVersion, $this->getRequestPath());
     }
 
     /**
@@ -52,12 +45,12 @@ class AbstractFacebookApi
      */
     public static function getClient(): Client
     {
-        if (!self::$client)
-        {
-            self::$client = new Client();
-        }
+      if (!self::$client)
+      {
+          self::$client = new Client();
+      }
 
-        return self::$client;
+      return self::$client;
     }
 
     /**
@@ -65,12 +58,15 @@ class AbstractFacebookApi
      */
     public function getRequestUri(): FacebookRequestUri
     {
-        return $this->requestUri;
+       return $this->requestUri;
     }
     
-    public function call($payload: Request): Result
+    public function request(ApiRequest $payload): ApiResult
     {
-        return new ApiResult();
+      $client = self::getClient();
+      $result = new ApiResult();
+      
+      return $result;
     }
 
 }
