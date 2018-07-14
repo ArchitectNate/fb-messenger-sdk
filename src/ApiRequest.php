@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace ArchNate\MessengerSdk;
 
+use Tightenco\Collect\Support\Collection;
+
 class ApiRequest {
 
   /**
@@ -12,33 +14,39 @@ class ApiRequest {
   protected $accessToken;
 
   /**
-   * @var ModelRequestContainer
+   * @var Collection
    */
-  protected $mrc;
+  protected $requestBody;
+
+  /**
+   * @var FacebookRequestUri
+   */
+  protected $endpoint;
 
   /**
    * @param FacebookAccessToken $accessToken
    */
-  public function __construct(FacebookAccessToken $accessToken, ModelCollectionInterface $mrc)
+  public function __construct(FacebookAccessToken $accessToken, FacebookRequestUri $endpoint, Collection $requestBody)
   {
    $this->accessToken = $accessToken;
-   $this->mrc = $mrc;
+   $this->requestBody = $requestBody;
+   $this->endpoint = $endpoint;
   }
 
   /**
-   * @todo Loop through all of the models recursively and run their "generateJson" methods
+   * Convert our collection of data into a json string that can be sent to the FB API
+   * 
    * @return string
    */
-  public function getJson()
+  public function getJson(): string
   {
-    $json = '';
-
-    /** @todo We will need to reduce this code into something more manageable
-     *  For now we'll do it as a simple recursive scan
-     */ 
-
-
-
-    return $json;
+    return $this->requestBody->toJson();
   }
+
+  public function request()
+  {
+    
+  }
+
+
 }

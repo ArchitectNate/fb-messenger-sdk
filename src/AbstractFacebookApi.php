@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace ArchNate\MessengerSdk;
 
 use GuzzleHttp\Client;
+use Tightenco\Collect\Support\Collection;
 
 /**
  * Class AbstractFacebookApi
@@ -61,9 +62,11 @@ class AbstractFacebookApi
        return $this->requestUri;
     }
     
-    public function request(ApiRequest $payload): ApiResult
+    public function request(FacebookAccessToken $accessToken, ModelCollection $dataModel): ApiResult
     {
       $client = self::getClient();
+      $requestBody = $dataModel->toJson();
+
       $result = new ApiResult();
       
       return $result;
