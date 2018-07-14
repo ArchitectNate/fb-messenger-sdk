@@ -33,8 +33,11 @@ class ApiRequest {
   {
     $json = '';
 
-    // array_reduce_recursive
-    // 
+    /** @todo We will need to reduce this code into something more manageable
+     *  For now we'll do it as a simple recursive scan
+     */ 
+
+
 
     return $json;
   }
