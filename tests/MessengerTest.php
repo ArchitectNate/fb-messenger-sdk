@@ -64,4 +64,10 @@ class MessengerTest extends TestCase
 
     $this->assertNotEmpty($baseUri);
   }
+
+  /** @test */
+  public function can_send_a_model()
+  {
+    
+  }
 }
