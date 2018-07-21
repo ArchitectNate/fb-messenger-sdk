@@ -5,3 +5,7 @@ public/
 .idea/
 .vagrant/
 /nbproject/
+Homestead.yaml
+VagrantFile
+aliases
+after.sh
