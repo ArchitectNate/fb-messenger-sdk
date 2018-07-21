@@ -6,6 +6,6 @@ public/
 .vagrant/
 /nbproject/
 Homestead.yaml
-VagrantFile
+Vagrantfile
 aliases
 after.sh
